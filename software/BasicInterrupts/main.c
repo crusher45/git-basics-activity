@@ -36,7 +36,7 @@ int main(void)
     	}
     	IOWR(LEDR_BASE,0,counter);
     	for (int i =0; i<50000; i++){
-    		asm ( "nop" );
+    		asm ( nop );
     	}
 
     }
